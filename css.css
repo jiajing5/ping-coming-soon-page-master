@@ -1,0 +1,134 @@
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+html, body{
+  margin:0; padding:0; box-sizing:border-box; clear:both;
+  font-family: 'Libre Franklin', sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.logoimg{
+  width: 4rem;
+  margin-bottom: 1.5rem;
+}
+.firstline{
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.graytext{
+  color: hsl(0, 0%, 59%);
+}
+.secondline{
+  margin-bottom: 1.3rem;
+  font-size: 1rem;
+}
+form{
+  display: flex;
+}
+.emailandmsg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.email{
+  border-color: hsl(0, 0%, 59%);
+  border-width: 1px;
+  width: 18rem;
+  outline: 0;
+}
+.email, .submit-email{
+  border-radius: 40px;
+  height: 2.5rem;
+}
+.submit-email{
+  background-color:hsl(223, 87%, 63%);
+  width: 7rem;
+  color:white;
+  text-align: center;
+  border: none;
+  margin-left: 0.6rem;
+  box-shadow: 0px 2px 10px 5px hsl(225, 19%, 92%);
+}
+.submit-email:hover{
+  cursor: pointer;
+  background-color: hsl(223, 100%, 88%);
+}
+.empty-email-message, .invalid-email-message{   
+  color:hsl(354, 100%, 66%);
+}
+.dashbord{
+  width: 25rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.iconswraper{
+  display: flex;
+  justify-content: space-between; 
+  margin-bottom: 1.5rem;
+  width: 7.5rem;
+}
+.iconcircle{
+  width: 2.1rem; 
+  height: 2.1rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: hsl(0, 0%, 59%);
+  border-width: 0.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconcircle:hover{
+  background-color: royalblue;
+  border-color: royalblue;
+  cursor: pointer;
+}
+.icon {
+  display: inline-block;
+  stroke-width: 0;
+  stroke: royalblue;
+  fill: royalblue;
+  width: 1rem; 
+  height: 1rem;
+}
+.icon:hover, .iconcircle:hover .icon {
+  cursor: pointer;
+  stroke: white;
+  fill: white;
+}
+
+.redborder{
+  border-color: hsl(354, 100%, 66%);
+}
+
+@media screen and (max-width:1439px){
+  html{
+    font-size: 10px;
+  }
+  form{
+    flex-direction: column;
+  }
+  .emailandmsg{
+    align-items: center;
+  }
+  .email, .submit-email{
+    width: 23rem;
+    height: 3rem;
+  }
+  .empty-email-message, .invalid-email-message{
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .dashbord{
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+  }
+}
